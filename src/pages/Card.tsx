@@ -8,7 +8,7 @@ const Card = () => {
         to="/"
         className="text-blue-500 hover:underline text-xl"
       >
-        Back to Home
+        To Home
       </Link>
     </div>
   );
