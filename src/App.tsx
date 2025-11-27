@@ -1,14 +1,18 @@
-import './App.css'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import './App.css';
+import Home from './pages/Home';
+import Card from './pages/Card';
 
-function App() {
-
+const App = () => {
   return (
-    <div class="bg-green-100 min-h-screen flex items-center justify-center">
-      <p class="text-3xl font-bold underline">
-        TEST WIX
-      </p>
+    <div className="bg-green-100 min-h-screen flex items-center justify-center">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/card" element={<Card />} />
+      </Routes>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
