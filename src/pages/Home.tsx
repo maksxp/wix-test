@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -9,7 +8,7 @@ const Home = () => {
         to="/card"
         className="text-blue-500 hover:underline text-xl"
       >
-        Go to Card
+        To Card
       </Link>
     </div>
   );

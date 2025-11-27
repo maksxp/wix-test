@@ -1,11 +1,10 @@
-import { StrictMode } from 'react'
-import React from 'react'
+import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { HashRouter } from 'react-router-dom'
 import './index.css'
 import App from './App'
 
-const rootNode: React.ReactNode  = (
+const rootNode = (
   <StrictMode>
     <HashRouter>
       <App />
@@ -13,5 +12,5 @@ const rootNode: React.ReactNode  = (
   </StrictMode>
 );
 
-createRoot(document.getElementById('root')!).render(rootNode)
+createRoot(document.getElementById('root')!).render(rootNode as React.ReactNode)
 
